@@ -1,0 +1,5 @@
+Terms Drift Watch v0.3.0, mutation check (python3 scripts/mutation_check.py 3)
+Full run: 134 mutants, 132 caught, 2 survived. Both survivors were examined:
+  - "page cut before squashing": a real gap. Test added (test_the_8000_characters_are_counted_after_the_white_space_is_squashed); re-run: caught.
+  - "quote spacing sensitive": equivalent change (the quote and the page are already on one line when _on_page runs); removed from the script with a comment.
+Result: 133 mutants (the 134 minus the equivalent one), all caught. The last two were re-run on their own after the full run, not as part of one single pass.
